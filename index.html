@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Encriptador de textos</title>
+</head>
+
+<body>
+    <header>
+        <section id="titulo">
+            <h1>Encriptador de texto</h1>
+        </section>
+    </header>
+    <div id="main-seccion">
+        <main>
+            <div class="input-container">
+                <textarea id="input" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="msg-error">
+            </div>
+            <div id="botones">
+                <button id="btn-encriptar" class="btn-style" type="button">Encriptar</button>
+                <button id="btn-desencriptar" class="btn-style" type="button">Desencriptar</button>
+            </div>
+        </main>
+        <section id="texto-respuesta">
+            <div class="img-respeusta">
+                <img src="./assets/images/Muñeco.png" alt="">
+            </div>
+            <div id="cnt-texto-respuesta">
+                <h3 id="mensaje"  class="h3-mensaje">Mensaje no encontrado</h3>
+                <p id="ingresar-texto" class="caja-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <p id="texto-convertido"></p>
+                <button id="btn-copiar" class="boton-copiar btn-style">Copiar</button>
+            </div>
+        </section>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+
+</html>
