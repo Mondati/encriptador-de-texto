@@ -136,7 +136,7 @@ div.msg-error {
   align-items: center;
   background-color: var(--bg-color-box);
   border-radius: 2rem;
-margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .caja-texto {
@@ -201,6 +201,10 @@ margin-top: -1rem;
 #btn-copiar:active {
   background-color: rgba(205, 204, 204, 0.865);
 }
+
+/*------------------------ MEDIAS QUERIE 768PX -----------------------------------*/
+/*------------------------ MEDIAS QUERIE 768PX -----------------------------------*/
+/*------------------------ MEDIAS QUERIE 768PX -----------------------------------*/
 
 @media (min-width: 768px) {
   .input-container {
@@ -275,7 +279,9 @@ margin-top: -1rem;
     display: flex;
     justify-content: space-evenly;
   }
-
+#cnt-texto-respuesta{
+ margin-top: 1rem;
+}
   #texto-respuesta {
     display: flex;
     flex-direction: column;
