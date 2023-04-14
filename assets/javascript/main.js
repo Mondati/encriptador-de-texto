@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const textarea = document.getElementById("input");
     const $msgError = document.querySelector('.msg-error');
 
-   
+
 
     function validarTexto(txt) {
         const normalizado = txt.trim().toLowerCase()
@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return textoEncriptado;
     }
-
+    
     function desencriptar(textoEncriptado) {
         let textoDesencriptado = textoEncriptado;
         for (let i = 0; i < textoDesencriptado.length; i++) {
             let letra = textoDesencriptado[i];
-            if (letra === "e" && textoDesencriptado[i + 1] === "n" && textoDesencriptado[i + 2] === "t" && textoDesencriptado[i + 3] === "e" && textoDesencriptado[i + 1] === "r") {
+            if (letra === "e" && textoDesencriptado[i + 1] === "n" && textoDesencriptado[i + 2] === "t" && textoDesencriptado[i + 3] === "e" && textoDesencriptado[i + 4] === "r") {
                 textoDesencriptado = textoDesencriptado.replace("enter", "e");
             } else if (letra === "i" && textoDesencriptado[i + 1] === "m" && textoDesencriptado[i + 2] === "e" && textoDesencriptado[i + 3] === "s") {
                 textoDesencriptado = textoDesencriptado.replace("imes", "i");
@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return textoDesencriptado;
     }
+
 
     function procesarTexto(usarEncriptacion) {
         const textoUsuario = textarea.value
