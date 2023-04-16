@@ -29,6 +29,11 @@ body {
   background-color: var(--bg-color-primary);
 }
 
+.foot {
+  width: 50%;
+  margin-top: 5rem;
+}
+
 h1 {
   text-align: center;
   color: var(--font-color);
@@ -59,18 +64,6 @@ textarea {
 
 textarea:focus {
   outline: none;
-}
-
-textarea::-webkit-scrollbar {
-  width: 4px; /* ancho de la barra de desplazamiento */
-}
-
-textarea::-webkit-scrollbar-thumb {
-  background-color: var(--bg-btn-en);
-}
-
-textarea {
-  scrollbar-width: thin; /* ancho del scroll reducido a solo la barra */
 }
 
 div.msg-error {
@@ -126,8 +119,8 @@ div.msg-error {
 
 #texto-respuesta {
   width: 90%;
-  margin: 3rem auto;
-  height: 20vh;
+  margin: 3rem auto 1rem;
+  height: 50%;
 }
 
 #cnt-texto-respuesta {
@@ -137,6 +130,7 @@ div.msg-error {
   background-color: var(--bg-color-box);
   border-radius: 2rem;
   margin-top: -1rem;
+  height: 100%;
 }
 
 .caja-texto {
@@ -178,14 +172,6 @@ div.msg-error {
 
 .convertido:focus {
   outline: none;
-}
-
-.convertido::-webkit-scrollbar {
-  width: 1rem; /* ancho de la barra de desplazamiento */
-}
-
-.convertido::-webkit-scrollbar-thumb {
-  background-color: var(--bg-btn-en);
 }
 
 .boton-copiar-on {
@@ -234,6 +220,10 @@ div.msg-error {
   }
 }
 
+/*------------------------ MEDIAS QUERIE 1280PX -----------------------------------*/
+/*------------------------ MEDIAS QUERIE 1280PX -----------------------------------*/
+/*------------------------ MEDIAS QUERIE 1280PX ----------------------------------*/
+
 @media (min-width: 1280px) {
   h1 {
     display: inline-block;
@@ -279,9 +269,11 @@ div.msg-error {
     display: flex;
     justify-content: space-evenly;
   }
-#cnt-texto-respuesta{
- margin-top: 1rem;
-}
+
+  #cnt-texto-respuesta {
+    margin-top: 1rem;
+  }
+
   #texto-respuesta {
     display: flex;
     flex-direction: column;
